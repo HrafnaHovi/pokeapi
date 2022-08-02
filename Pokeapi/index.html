@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lag="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel = "stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+
+        <div class="page-nav">
+            <h1>PokeAPI</h1>
+            <!--seccion de busqueda-->
+            <form id="formulario">
+                <input id="input" type="text" name="pokemon" autocomplete="on" placeholder="Buscar Pokemon">
+                <button type="button" class="BottonB">buscar</button>
+            </form>
+        </div>
+        <!--resultado de la busqueda-->
+        <div PokeCard class="Carta" style="display: none;" id="carta">
+            
+        </div>
+        <button type="button" class="Back">Inicio</button>
+        
+        <!--contenedor principal-->
+        <div id="PokeCont"class="container-pokedex">
+            
+
+        </div>
+
+        <!--contenedor principal-->
+        <div id="PokeNone"class="pokeNone" style="display: none;"><button type="button" class="errBack">Atras</button>
+            <img class="img-container"src="./pokemones /pokemonNo.png" width="300" height="200">
+            <div>Ningun Pokemon Coincide Con Tu Busqueda</div>
+        </div>
+        <script src="scripts.js" type="text/javascript" defer></script>
+    </body>
+
+</html>
